@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  
+
+    <center>
+        <h1>hello every one welcome to my home page </h1>
+    </center>
+   
+    
+    <a href="{% url 'about' %}">ABOUT</a>
+     <a href="{% url 'contact' %}">CONTACT</a>
+     <a href="{% url 'login' %}">LOGIN</a>
+     <a href="{% url 'form' %}">FORM</a>
+     {% block content %}
+    {% endblock %}
+</body>
+</html>
